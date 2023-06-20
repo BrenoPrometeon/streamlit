@@ -57,10 +57,6 @@ Se você quiser contribuir para o desenvolvimento do SCS Converter, sinta-se à 
 
 O SCS Converter é distribuído sob a licença MIT. Para mais detalhes, consulte o arquivo [LICENSE](LICENSE) no repositório do projeto.
 
-## Contato
-
-Se você tiver alguma dúvida, sugestão ou feedback, entre em contato conosco através do email scs-converter@example.com.
-
 ---
 
 Esperamos que você encontre o SCS Converter útil e eficiente para suas necessidades de conversão de arquivos CSV. Aproveite o aplicativo e faça suas conversões de forma rápida e fácil!
