@@ -34,19 +34,13 @@ git clone https://github.com/seu-usuario/scs-converter.git
 cd scs-converter
 ```
 
-4. Instale as dependências necessárias:
-
-```
-pip install -r requirements.txt
-```
-
-5. Execute o aplicativo:
+4. Execute o aplicativo:
 
 ```
 streamlit run app.py
 ```
 
-6. O aplicativo será aberto em seu navegador padrão. Agora você pode usar o SCS Converter para fazer upload de arquivos CSV e realizar conversões.
+5. O aplicativo será aberto em seu navegador padrão. Agora você pode usar o SCS Converter para fazer upload de arquivos CSV e realizar conversões.
 
 ## Tecnologias utilizadas
 
@@ -56,10 +50,6 @@ streamlit run app.py
 ## Contribuição
 
 Se você quiser contribuir para o desenvolvimento do SCS Converter, sinta-se à vontade para enviar um pull request no repositório do GitHub. Ficaremos felizes em analisar e incorporar suas contribuições.
-
-## Licença
-
-O SCS Converter é distribuído sob a licença MIT. Para mais detalhes, consulte o arquivo [LICENSE](LICENSE) no repositório do projeto.
 
 ---
 
