@@ -10,6 +10,10 @@ O aplicativo SCS Converter oferece as seguintes funcionalidades:
 
 - Opções de conversão: O usuário pode selecionar uma opção de conversão para alterar o arquivo CSV de acordo com a sua necessidade.
 
+- A coluna 'Type' tem seus valores convertidos de 'P' para 'RP' quando a coluna 'Name' é igual a L", P, Q, R, R', R", T, V, Y, F''' ou O, e caso o pneu seja bordo avolgente, as colunas com 'Name' igual a 'S' também tem seu valor em 'Type' convertida para 'RP' senão mantém da sem alteração.
+  
+- Um conjunto de dados são concatenados ao final dos arquivos CSV.
+
 - Download do arquivo convertido: Após a conversão, o usuário pode fazer o download do arquivo CSV convertido.
 
 ## Como executar o aplicativo
