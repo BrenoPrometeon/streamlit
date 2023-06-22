@@ -3,8 +3,10 @@ import pandas as pd
 import io
 from PIL import Image
 
+logo_path = "assets/logoWhite.png"
+    
 # Load local image
-image = Image.open('assets/Logo_Prometeon_15.10_1_POS.png')
+image = Image.open(logo_path)
 
 # Show image in Streamlit
 st.image(image, caption='Prometeon Type Group', use_column_width=True)
