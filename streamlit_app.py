@@ -12,7 +12,7 @@ image = Image.open(logo_path)
 st.image(image, caption='Prometeon Type Group', use_column_width=True)
 
 # Title and Description
-st.title("SCS Conversor")
+st.title("SCS Converter")
 st.write("Upload a CSV file and select an option to modify it:")
 
 # Upload CSV file
