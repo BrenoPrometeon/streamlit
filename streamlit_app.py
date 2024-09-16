@@ -35,6 +35,9 @@ if uploaded is not None:
     
     # Read the CSV file
     df = pd.read_csv(file_data, skiprows=5, sep=';')
+    
+    # Select 8 columns
+    df = df.iloc[:, :8]
 
     # Variables
     old_values_RP = ['L\'\'','P','Q','R','R\'','R\'\'','T','V','Y']
@@ -65,17 +68,17 @@ if uploaded is not None:
         f.write('\n\n')   
 
         new_lines = [
-        ['LC', '', 0, '0,0', '0,0', 'mm', 'P', '', ''],
-        ['BC1', '', 0, '0,0', '0,0', 'mm', 'P', '',''],
-        ['BC2', '', 0, '0,0', '0,0', 'mm', 'P', '',''],
-        ['R01', '', 0, '0,0', '0,0', 'mm', 'C', '',''],
-        ['R02', '', 0, '0,0', '0,0', 'mm', 'C', '',''],
-        ['R03', '', 0, '0,0', '0,0', 'mm', 'C', '',''],
-        ['R04', '', 0, '0,0', '0,0', 'mm', 'C', '',''],
-        ['R05', '', 0, '0,0', '0,0', 'mm', 'C', '',''],
-        ['R06', '', 0, '0,0', '0,0', 'mm', 'C', '','']
+        ['LC', '', 0, '0,0', '0,0', 'mm', 'P', ''],
+        ['BC1', '', 0, '0,0', '0,0', 'mm', 'P', ''],
+        ['BC2', '', 0, '0,0', '0,0', 'mm', 'P', ''],
+        ['R01', '', 0, '0,0', '0,0', 'mm', 'C', ''],
+        ['R02', '', 0, '0,0', '0,0', 'mm', 'C', ''],
+        ['R03', '', 0, '0,0', '0,0', 'mm', 'C', ''],
+        ['R04', '', 0, '0,0', '0,0', 'mm', 'C', ''],
+        ['R05', '', 0, '0,0', '0,0', 'mm', 'C', ''],
+        ['R06', '', 0, '0,0', '0,0', 'mm', 'C', '']
         ]
-        new_lines_df = pd.DataFrame(new_lines, columns=df.columns)
+        new_lines_df = pd.DataFrame(new_lines, columns=df.columns[:8])
 
         # Concatenar o DataFrame existente com as novas linhas
         df_atualizado = pd.concat([df, new_lines_df])
